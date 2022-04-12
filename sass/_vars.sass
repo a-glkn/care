@@ -1,0 +1,2043 @@
+$default-font: "osnovapro", sans-serif
+$accent: #219cdc
+$text: #000
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px
+$grid-columns: 12
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px)
+
+$gutter: $grid-gutter-width
+
+.bg-grey
+    background-color: #f3f3f3
+
+
+.bg-grey-2
+    background-color: #fafafa
+
+.bg-white
+    background-color: #fff
+
+.bg-cover
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+
+.bg-blue
+    background-color: #f2f7fa
+    
+
+.text-blue
+    color: #39a3df
+
+.text-grey2
+    color: #666B71
+
+.text-accent
+    color: $accent !important
+
+.circle
+    font-size: 46px
+    color: #219cdc
+    width: 72px
+    height: 72px
+    display: inline-block
+    border-radius: 50%
+    border: 1px solid #cbe4ef
+    text-align: center
+    line-height: 82px
+    margin-right: 5px
+
+.btn
+    width: 170px
+    height: 41px
+    color: #fff
+    background-color: $accent
+    border-radius: 4px
+    border: 0
+    transition: .3s ease
+    cursor: pointer
+    border: 1px solid $accent
+    &.btn_bd
+        background-color: #f9f9f9
+        border-color: #eeeeee
+        color: #000
+        padding-left: 15px
+        padding-right: 15px
+        width: auto
+        font-size: 14px
+        &:hover
+            color: #fff
+    &:hover
+        background-color: #086799
+
+    &.btn_red
+        background-color: #ff504c
+        color: #fff
+        border: 1px solid #ff504c
+        &:hover
+            opacity: 0.9
+    &.btn_w-auto
+        width: auto
+        padding-left: 3px
+        padding-right: 35px
+    &.btn_w-100p
+        width: 100%
+    &.btn_doc
+        background-image: url(../img/doc.png)
+        background-position: 30px center
+        background-repeat: no-repeat
+        padding-left: 65px
+    &.btn_tall
+        height: 51px
+
+    &.btn_coat-of-arms
+        position: relative
+        overflow: hidden
+        .icon
+            position: absolute
+            width: 100px
+            left: 50%
+            margin-left: -50px
+            fill: white
+            height: 100px
+            top: 50%
+            margin-top: -40px
+            opacity: 0.25
+
+    &.btn_grey
+        background-color: #f3f3f3
+        color: #010101
+        font-size: 14px
+        border-color: #f3f3f3
+        &:hover
+            background-color: #fff
+            border-color: $accent
+            color: $accent
+
+    &.btn_light
+        background-color: #fff
+        color: #219cdc
+        border: 1px solid #219cdc
+        &:hover
+            background-color: #219cdc
+            color: #fff
+
+a.btn
+    text-decoration: none
+    line-height: 41px
+    text-align: center
+    display: inline-block
+    &:hover
+        color: #fff
+
+    &.btn_tall
+        line-height: 51px
+
+.btn_zoom
+    display: flex
+    cursor: pointer
+    text-decoration: none !important
+    svg
+        width: 41px
+        height: 41px
+    span
+        margin-left: 10px
+        color: $accent
+        font-size: 12px
+        margin-top: auto
+        margin-bottom: auto
+
+.link
+    font-size: 12px
+    color: $accent
+    text-transform: uppercase
+    display: inline-block
+    text-decoration: none !important
+    padding-right: 14px
+    &.link_arrow-left
+        background-image: url(../img/arr-right.png)
+        background-position: center right
+        background-repeat: no-repeat
+    &:hover
+        color: $accent
+
+.text-grey
+    color: #666666
+
+.section
+    .text
+        font-size: 18px
+
+.visual-adjustment
+    a
+        color: #666666
+        font-size: 14px
+        position: relative
+        padding-left: 35px
+        line-height: 25px
+        text-decoration: none
+        display: inline-block
+        transition: .3s ease
+        .icon
+            width: 25px
+            height: 25px
+            background-color: #8ab4cf
+            position: absolute
+            border-radius: 50%
+            left: 0
+            display: flex
+            svg
+                width: 14px
+                height: 14px
+                fill: #fff
+                margin: auto
+        &:hover
+            color: $accent
+
+
+    &.visual-adjustment_icon-right
+        a
+            padding-left: 0
+            padding-right: 35px
+            .icon
+                left: auto
+                right: 0
+
+.menu-toggler
+    width: 32px
+    height: 32px
+    cursor: pointer
+    span
+        width: 32px
+        height: 1px
+        background-color: #229cdd
+        position: absolute
+        top: 15.5px
+        &:after, &:before
+            content: ''
+            width: 32px
+            height: 1px
+            display: block
+            position: absolute
+            display: block
+            background-color: #229cdd
+        &:before
+            top: -8px
+        &:after
+            top: 8px
+
+
+.mobile-menu
+    position: fixed
+    top: 67px
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 1000
+    background-color: #fff
+    display: none
+    user-select: none
+    .geo-menu
+        margin-top: 20px
+    .mobile-menu__inner
+        overflow-y: auto
+        overflow-x: hidden
+    .mobile-menu__menu
+        margin-top: 14px
+        border-top: 1px solid #eaeaea
+        border-bottom: 1px solid #eaeaea
+        ul
+            li
+                list-style: none
+                margin: 1em 0
+                
+                ul
+                    background-color: #f9f9f9
+                    padding-top: 0.5em
+                    padding-bottom: 0.5em
+                    margin-top: 0.5em
+                    display: none
+                    li
+                        a
+                            display: block
+                a
+                    position: relative
+                    font-size: 16px
+                    color: #000
+                    text-decoration: none
+                    padding-left: 10px
+                    padding-right: 10px
+                &.has-child
+                    >a
+                        padding-right: 28px
+                        &:after
+                            content: ''
+                            display: block
+                            width: 10px
+                            height: 5px
+                            position: absolute
+                            right: 0
+                            top: 50%
+                            margin-top: -4px
+                            background-image: url(../img/arr-down.png)
+                    &.active
+                        >a
+                            &:after
+                                transform: rotate(180deg)
+                        ul
+                            display: block
+
+    .mobile-menu__phones
+        display: flex
+        justify-content: space-around
+        height: 30px
+        line-height: 30px
+        position: relative
+        margin-top: 9px
+        &:after
+            background-color: #eaeaea
+            content: ''
+            display: block
+            height: 30px
+            width: 1px
+            position: absolute
+            top: 0
+            left: 50%
+        a
+            text-decoration: none
+            font-size: 16px
+            color: #000
+    .form
+        margin-top: 10px
+        margin-bottom: 30px
+        .form__input
+            width: 100%
+            max-width: 100%
+
+.menu-openned
+    .menu-toggler
+        span
+            transform: rotate(45deg)
+            &:after
+                display: none
+            &:before
+                top: 0px
+                transform: rotate(90deg)
+
+.heading
+    color: #000000
+
+    &.heading_lg
+        font-size: 48px
+
+    &.heading_md
+        font-size: 36px
+        &.highlighted
+            &:after
+                width: 170px
+
+        &.highlighted-full
+            &:after
+                width: 100%
+    
+    &.heading_md-sm
+        font-size: 30px
+        line-height: 1.2
+
+    &.heading_sm
+        font-size: 24px
+        &.highlighted
+            &:after
+                width: 73px
+
+        &.highlighted-full
+            &:after
+                width: 100%
+    &.heading_xs
+        font-size: 18px
+
+    &.highlighted
+        padding-bottom: 0.5em
+        position: relative
+        &:after
+            content: ''
+            display: block
+            height: 1px
+            position: absolute
+            bottom: 0
+            left: 0
+            background-color: $accent
+
+    &.highlighted-full
+        padding-bottom: 0.5em
+        position: relative
+        &:after
+            content: ''
+            display: block
+            height: 1px
+            position: absolute
+            bottom: 0
+            left: 0
+            background-color: $accent
+
+    &.heading_bd-bottom
+        padding-bottom: 1em
+        border-bottom: 1px solid #eaeaea
+            
+
+.invert
+    *
+        color: #fff
+
+.section__text
+    font-size: 16px
+    line-height: 1.5
+    p
+        font-size: 16px
+        line-height: 1.5
+        margin: 1em 0
+        &.lg
+            font-size: 18px
+        &.xlg
+            font-size: 20px
+        &.xxlg
+            font-size: 24px
+
+.slick-arrow
+    width: 17px
+    height: 31px
+    background-image: url(../img/arr-left.png)
+    border: 0
+    text-indent: -99999px
+    background-color: transparent
+    position: absolute
+    top: 50%
+    margin-top: -15px
+    &.slick-next
+        transform: rotate(180deg)
+
+.slick-dots
+    text-align: center
+    li
+        display: inline-block
+        list-style-type: none
+        width: 4px
+        height: 4px
+        margin-right: 3px
+        margin-left: 3px
+        button
+            text-indent: -9999px
+            background-color: #aeaeae
+            width: 4px
+            height: 4px
+            padding: 0
+            border: 0
+            border-radius: 2px
+            cursor: pointer
+        &.slick-active
+            width: 34px
+            button
+                background-color: $accent
+                width: 34px
+
+
+.serivce-list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+        width: calc(50% - 12.5px)
+        height: 200px
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        border-radius: 4px
+        margin-bottom: 30px
+        text-decoration: none !important
+        padding-left: 20px
+        padding-right: 20px
+        transition: .3s ease
+        &-title
+            margin-top: 64px
+            font-size: 24px
+            color: #000000
+        &-more
+            margin-top: 1em
+            font-size: 14px
+            color: #219cdc
+            opacity: 0
+            transition: .3s ease
+            text-decoration: underline
+        &:hover
+            box-shadow: 0px 7px 49px 0px rgba(0, 0, 0, 0.11)
+            .serivce-list
+                &__item
+                    &-more
+                        opacity: 1
+
+.social-icons
+	display: flex
+	.social-icons__item
+		width: 33px
+		height: 33px
+		border-radius: 50%
+		display: flex
+		background-color: #eaeaea
+		margin-left: 5px
+		margin-right: 5px
+		.icon
+			height: 16px
+			margin: auto
+		&.social-icons__item_vk
+			.icon
+				width: 20px
+				fill: #3faae1
+		&.social-icons__item_fb
+			.icon
+				width: 14px
+				fill: #3faae1
+		&.social-icons__item_insta
+			.icon
+				width: 16px
+				fill: #3faae1
+                
+
+.social-icons
+	.social-icons__item
+        transition: .3s ease
+        &:hover
+            opacity: .7
+
+.toggle-block
+    margin-bottom: 30px
+    position: relative
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 35px
+    padding-bottom: 30px
+    overflow: hidden
+    cursor: pointer
+    height: 292px
+    transition: .3s ease
+    user-select: none
+    &:after
+        content: ''
+        display: block
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        opacity: 1
+        transition: .3s ease
+        background: linear-gradient(180deg, rgba(249,249,249, 0) 0%, rgba(255,255,255,1) 100%)
+    &:before
+        content: ''
+        display: block
+        width: 27px
+        height: 27px
+        right: 20px
+        top: 40px
+        position: absolute
+        background: url(../img/plus.png) 0 0 no-repeat
+    .heading
+        margin-bottom: 1.5em
+
+    &.active
+        height: auto
+        box-shadow: 0px 7px 49px 0px rgba(0, 0, 0, 0.11)
+        &:before
+            transform: rotate(45deg)
+        &:after
+            opacity: 0
+
+.breadcrumbs
+    font-size: 14px
+    color: #000000
+    a
+        color: #000000
+        text-decoration: none
+        &:hover
+            color: $accent
+    span
+        color: $accent
+    &_separate
+        padding-top: 18px
+        padding-bottom: 16px
+
+    &_inside
+        padding-top: 48px
+        width: 100%
+        z-index: 30
+        position: absolute
+        left: 0 
+        top: 127px
+        
+.nums
+    display: flex
+    .nums__item
+        text-align: center
+        min-width: 70px
+        padding-left: 20px
+        padding-right: 20px
+        position: relative
+        line-height: 1
+        &:after
+            content: ''
+            display: block
+            width: 1px
+            height: 41px
+            background-color: #eeeeee
+            position: absolute
+            right: 0
+            top: 50%
+            margin-top: -20px
+        div
+            font-size: 14px
+            color: #666666
+            margin-bottom: 7px
+        span
+            font-size: 26px
+            color: $accent
+            display: block
+            margin-bottom: 4px
+        &:last-child
+            &:after
+                display: none
+
+.catalog-funcs
+    display: flex
+    .catalog-funcs__item
+        width: 35px
+        height: 35px
+        display: inline-block
+        text-decoration: none
+        margin-left: 20px
+        svg
+            width: 35px
+            height: 35px
+            fill: #A3A2A2
+            transition: .3s ease
+        &:hover
+            svg
+                fill: $accent
+
+.catalog
+    .catalog__item
+        padding: 20px
+        border: 1px solid #efefef
+        border-radius: 5px
+        transition: .3s ease
+        &:hover
+            border-color: transparent
+            box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.04)
+        .catalog__item-top
+            display: flex
+            width: 100%
+
+        .catalog__item-img
+            margin-right: 20px
+            img
+                min-width: 180px
+                width: 180px
+                height: 180px
+                border-radius: 4px
+                overflow: hidden
+
+        .catalog__item-info
+            width: 100%
+
+        .catalog__item-heading
+            width: 100%
+            font-size: 24px
+            color: #000000
+            padding-bottom: 0.5em
+            border-bottom: 1px solid #eeeeee
+
+        .catalog__item-addr
+            padding-top: 1em
+            padding-bottom: 1em
+            font-size: 16px
+            color: $accent
+            border-bottom: 1px solid #eeeeee
+
+        .catalog__item-nums
+            margin-top: 20px
+
+        .catalog__item-text
+            margin-top: 20px
+            font-size: 14px
+            color: #666666
+
+        .catalog__item-bottom
+            display: flex
+            justify-content: space-between
+            margin-top: 20px
+
+    &.catalog_single
+        .catalog__item
+            margin-top: 0
+            border: 0
+            padding: 0
+            box-shadow: none
+            .catalog__item-nums
+                padding-bottom: 0.5em
+                border-bottom: 1px solid #eeeeee
+            .catalog-funcs
+                margin-top: 25px
+            .catalog__item-text
+                margin-top: 25px
+                padding-bottom: 2em
+                border-bottom: 1px solid #eeeeee
+
+            .catalog__item-img
+                img
+                    min-width: 268px
+                    width: 268px
+                    height: 268px
+
+.sidebar
+    border-radius: 5px
+    box-shadow: 0px 7px 18px 0px rgba(0, 0, 0, 0.04)
+    padding-left: 10px
+    padding-right: 10px
+    padding-bottom: 25px
+    padding-top: 10px
+    border-radius: 5px
+
+.features-list
+    &__item
+        display: flex
+        margin-bottom: 20px
+        &:last-child
+            margin-bottom: 0
+        &-icon
+            width: 51px
+            height: 51px
+            min-width: 51px
+            min-height: 51px
+            background-color: #f3f3f3
+            border-radius: 50%
+            display: flex
+            margin-top: auto
+            margin-bottom: auto
+            margin-right: 25px
+            position: relative
+            svg
+                margin: auto
+                width: 32px
+                height: auto
+                max-height: 32px
+                fill: #aa9882
+                position: relative
+
+        &-title
+            display: flex
+            font-size: 16px
+            color: #000
+            line-height: 1.25
+            margin-top: auto
+            margin-bottom: auto
+
+
+.pension-card
+    border-radius: 4px
+    background-color: #fff
+    transition: .3s ease box-shadow
+    display: flex
+    flex-direction: column
+    
+    &__img
+        border-top-left-radius: 4px
+        border-top-right-radius: 4px
+        overflow: hidden
+        position: relative
+        img
+            width: 100%
+            height: auto
+        &-overlay
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            position: absolute
+            background: linear-gradient(180deg, rgba(243,243,243, 0) 0%, rgba(255,255,255,1) 100%)
+    &__inner
+        padding-left: 20px
+        padding-right: 20px
+        position: relative
+        z-index: 1
+        padding-bottom: 123px
+        display: flex
+        flex-direction: column
+        flex-grow: 1
+        position: relative
+        top: -30px
+    &__heading
+        color: #000
+        font-size: 22px
+        font-weight: 500
+        line-height: 1
+        // margin-top: 40px
+    &__address
+        font-size: 16px
+        color: #000
+        margin-top: 1em
+        line-height: 1.5
+        padding-top: 1em
+        padding-bottom: 1em
+        border-top: 1px solid #f3f3f3
+        border-bottom: 1px solid #f3f3f3
+    .features-list
+        margin-top: 28px
+        margin-bottom: 28px
+
+    &__price
+        display: flex
+        padding-top: 1em
+        padding-bottom: 1em
+        border-top: 1px solid #f3f3f3
+        border-bottom: 1px solid #f3f3f3
+        justify-content: space-between
+        position: absolute
+        bottom: 69px
+        left: 20px
+        width: calc(100% - 40px)
+        &-heading
+            font-size: 16px
+            color: #000
+            margin-top: auto
+            margin-bottom: auto
+            line-height: 1
+        &-sum
+            font-size: 20px
+            color: $accent
+            font-weight: 500
+            margin-top: auto
+            margin-bottom: auto
+            line-height: 1
+            white-space: nowrap
+    &__btns
+        background-color: #f3f3f3
+        display: flex
+        margin-top: 28px
+        position: absolute
+        bottom: 0
+        left: 20px
+        width: calc(100% - 40px)
+        .btn
+            width: 50%
+    &:hover
+        box-shadow: 0px 7px 49px 0px rgba(0, 0, 0, 0.11)
+
+.pension_slider-wrapper
+    width: calc(100% + 100px)
+    padding: 0 50px
+    margin-left: -50px
+    margin-right: -50px
+    overflow: hidden
+
+.pension_slider
+    .slick-slide
+        opacity: 0
+        &.slick-active
+            opacity: 1
+        
+    .slick-list
+        padding-top: 10px
+        padding-bottom: 50px
+        overflow: visible
+    &__item
+        padding-left: 12.5px
+        padding-right: 12.5px
+        transition: .3s ease
+        position: relative
+        &:hover
+            z-index: 10
+            transform: translateY(-10px) 
+
+    .slick-track
+        display: flex
+        .slick-slide
+            height: auto
+            > div
+                height: 100%
+    .slick-arrow
+        cursor: pointer
+        width: 40px
+        height: 40px
+        text-indent: -9999px
+        display: inline-block
+        position: absolute
+        top: 50%
+        z-index: 10
+        border: 0
+        margin-top: -21px
+        outline: none
+        background: transparent
+        transition: .3s ease
+        background-color: #ffffff
+        border-radius: 50%
+        cursor: pointer
+        box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.11)
+        &:before
+            content: ''
+            display: block
+            width: 1px
+            height: 15px
+            position: absolute
+            top: 7.5px
+            background-color: #d1d1d1
+        &:after
+            content: ''
+            display: block
+            width: 1px
+            height: 15px
+            position: absolute
+            bottom: 7.5px
+            background-color: #d1d1d1
+        &.slick-prev
+            left: -45px
+            &:before
+                left: 18px
+                transform: rotate(45deg)
+            &:after
+                left: 18px
+                transform: rotate(-45deg)
+        &.slick-next
+            right: -45px
+            transform: rotate(0deg)
+            &:before
+                right: 18px
+                transform: rotate(-45deg)
+            &:after
+                right: 18px
+                transform: rotate(45deg)
+        &:hover
+            opacity: .8
+
+        &.slick-disabled
+            opacity: 0.5
+            cursor: default
+.params
+    .params__item
+        display: flex
+        padding-top: 5px
+        .params__item-key
+            font-size: 16px
+            color: #666666
+            width: 50%
+            position: relative
+            padding-top: 5px
+            padding-bottom: 5px
+            &:after
+                content: ''
+                display: block
+                width: 1px
+                height: calc(100% + 5px)
+                position: absolute
+                right: 0
+                bottom: 0
+                background-color: #eeeeee
+        .params__item-value
+            font-size: 16px
+            width: 50%
+            color: $accent
+            padding-left: 25px
+            padding-top: 5px
+            padding-bottom: 5px
+
+.selectize-control.single .selectize-input, .selectize-dropdown.single
+    border-color: #efefef
+
+
+.iconned-text
+    display: flex
+    &__icon
+        width: 77px
+        height: 77px
+        .icon
+            width: 77px
+            height: 77px
+
+    &__content
+        margin-left: 20px
+        margin-top: auto
+        margin-bottom: auto
+        font-size: 16px
+        color: #000
+        line-height: 1.5
+        font-weight: 500
+
+.tariff-card
+    position: relative
+    padding-bottom: 172px
+    border: 1px solid #f9f9f9
+    border-radius: 6px
+    transition: .3s ease
+    height: 100%
+    &__img
+        position: relative
+        &:after
+            content: ''
+            display: block
+            background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 100%)
+            position: absolute
+            bottom: 0
+            left: 0
+            width: 100%
+            height: 100%
+    &__title
+        font-size: 22px
+        font-weight: 500
+        color: #000
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: .5em
+        margin-bottom: 1em
+        position: relative
+        &:after
+            content: ''
+            display: block
+            width: calc(100% - 40px)
+            height: 1px
+            background-color: #f3f3f3
+            position: absolute
+            bottom: 0
+            left: 20px
+    &__feature
+        display: flex
+        font-size: 16px
+        color: #000
+        justify-content: space-between
+        position: relative
+        line-height: 21px
+        padding-left: 50px
+        padding-right: 20px
+        margin-bottom: 1em
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            left: 20px
+            top: 0
+            width: 21px
+            height: 21px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-image: url(../img/check.svg)
+        &-count
+    
+    &__offer
+        position: absolute
+        font-size: 19px
+        color: #219cdc
+        padding-top: 0.75em
+        padding-bottom: 0.75em
+        bottom: 100px
+        left: 0
+        padding-left: 20px
+        padding-right: 20px
+        width: 100%
+        &:before
+            content: ''
+            display: block
+            width: calc(100% - 40px)
+            height: 1px
+            background-color: #f3f3f3
+            position: absolute
+            top: 0
+            left: 20px
+        &:after
+            content: ''
+            display: block
+            width: calc(100% - 40px)
+            height: 1px
+            background-color: #f3f3f3
+            position: absolute
+            bottom: 0
+            left: 20px
+    &__btns
+        padding-left: 20px
+        padding-right: 20px
+        display: flex
+        position: absolute
+        left: 0
+        bottom: 30px
+        width: 100%
+        .btn
+            width: 50%
+    &:hover
+        transform: translateY(-10px)
+        box-shadow: 0px 7px 49px 0px rgba(0, 0, 0, 0.11)
+
+
+    &.tariff-card_horizontal
+        display: flex
+        height: auto
+        padding-bottom: 0
+        &:hover
+            transform: none
+        .tariff-card__img
+            min-width: 40%
+        .tariff-card__content
+            position: relative
+            padding-top: 30px
+            hr
+                margin-right: 20px
+                margin-left: 20px
+            width: 100%
+        .tariff-card__offer
+            position: static
+            padding-top: 0
+            padding-bottom: 0
+            &:before, &:after
+                display: none
+        .tariff-card__btns
+            position: static
+            margin-top: 1.5em
+            width: 55%
+        .tariff-card__feature
+            width: 100%
+.icon-scheme
+    display: flex
+    &__item
+        width: 20%
+        position: relative
+        margin-bottom: 30px
+        &-icon
+            width: 77px
+            height: 77px
+            .icon
+                width: 77px
+                height: 77px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            right: 0
+            top: 38.5px
+            background: #cfe5f0
+            height: 1px
+            width: calc(100% - 77px)
+        &-title
+            color: #cbe4ef
+            font-size: 26px
+            margin: 0.5em 0
+        &-text
+            padding-right: 45px
+            font-size: 16px
+            line-height: 1.5
+            color: #000000
+            a
+                color: #219cdc
+        &:last-child
+            &:after
+                display: none
+    &_four-cols
+        .icon-scheme
+            &__item
+                width: 25%
+
+    &_three-cols
+        .icon-scheme
+            &__item
+                width: 33.3333%
+
+.selectize-input
+    background: #f9f9f9 !important
+    padding-top: 10px
+    padding-bottom: 10px
+    font-size: 14px
+    color: #010101
+
+.selectize-control .selectize-input
+    box-shadow: none !important
+
+.selectize-control .selectize-input:after
+    content: ''
+    background-image: url(../img/arr-down-2.png)
+    width: 20px
+    height: 10px
+    background-repeat: no-repeat
+    background-position: 0 0
+    border: 0
+
+.selectize-control.single .selectize-input.dropdown-active:after
+    transform: rotate(180deg)
+
+
+a.to-top
+    border: 1px solid #eaeaea
+    width: 64px
+    height: 64px
+    background-color: #fff
+    background-image: url(../img/arr-top.png)
+    background-position: center 23px
+    background-repeat: no-repeat
+    display: inline-block
+
+.footer
+    .container
+        position: relative
+    a.to-top
+        z-index: 10
+        position: absolute
+        border-radius: 50%
+        right: -84px
+        top: -68px - 28px
+
+hr
+    border: 0
+    margin-top: 2em
+    margin-bottom: 2em
+    height: 1px
+    background-color: #eeeeee
+
+.tabs
+    &-header
+        display: flex
+        height: 70px
+        &__item
+            cursor: pointer
+            color: #010101
+            background: #f9f9f9
+            font-size: 18px
+            padding-left: 20px
+            padding-right: 20px
+            text-align: center
+            min-width: 260px
+            line-height: 70px
+            border: 1px solid transparent
+            transition: .3s ease
+            &.active
+                border-color: #219cdc
+                border-radius: 4px
+                background-color: #ffffff
+                color: #219cdc
+
+    &-content
+        &__item
+            display: none
+            &.active
+                display: block
+
+.table
+    overflow-x: scroll
+    position: relative
+
+    table
+        width: 100%
+        border-left: 1px solid #eeeeee
+        border-top: 1px solid #eeeeee
+        border-radius: 5px
+        overflow: hidden
+        th
+            background-color: $accent
+            color: #fff
+            border-right: 1px solid #eeeeee
+            border-bottom: 1px solid #eeeeee
+        td
+            border-right: 1px solid #eeeeee
+            border-bottom: 1px solid #eeeeee
+            background-color: #fff
+            color: #000000
+        td, th
+            padding-left: 18px
+            padding-right: 18px
+            padding-top: 14px
+            padding-bottom: 14px
+            font-size: 14px
+            small
+                font-size: 10px
+        &.style-2
+            border: 0
+            tr
+                border-right: 1px solid #f0f7fa
+                border-left: 1px solid #f0f7fa
+            th
+                color: #026698
+                background-color: #f0f7fa
+                border-right: 1px solid #fff
+                border-bottom: 1px solid #fff
+                &:last-child
+                    border-right: 0
+            td
+                border-right: 1px solid #f0f7fa
+                border-bottom: 1px solid #f0f7fa
+
+        &.style-3
+            border: 0
+            tr
+                border-right: 1px solid #eeeeee
+                border-left: 1px solid #eeeeee
+            th
+                color: #fff
+                background-color: #219cdc
+                border-right: 1px solid #eeeeee
+                border-bottom: 1px solid #eeeeee
+                &:last-child
+                    border-right: 0
+            td
+                border-right: 1px solid #eeeeee
+                border-bottom: 1px solid #eeeeee
+
+    &_style-4
+        border: 1px solid #D7F0FF
+        border-radius: 6px !important
+        table
+            border: 0
+            tr
+                border-right: 0
+                border-left: 0
+                th
+                    border-bottom: 1px solid #D7F0FF
+            th
+                color: #fff
+                background-color: #D7F0FF
+                border-right: 0
+                border-bottom: 0
+                font-size: 24px
+                font-weight: normal
+                color: #666B71
+                &:last-child
+                    border-right: 0
+            td
+                border-right: 0
+                border-bottom: 0
+                border-bottom: 1px solid #D7F0FF
+                font-size: 20px
+                color: #303844
+
+            tr:last-child
+                td
+                    border-bottom: 0
+                
+
+.inputfile
+    width: 0.1px
+    height: 0.1px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    z-index: -1
+
+
+.inputfile + label
+    max-width: 80%
+    font-size: 12px
+    color: $accent !important
+    text-overflow: ellipsis
+    white-space: nowrap
+    cursor: pointer
+    display: inline-block
+    overflow: hidden
+
+
+
+.inputfile:focus + label,
+.inputfile.has-focus + label
+    outline: 1px dotted #000
+    outline: -webkit-focus-ring-color auto 5px
+
+
+
+.inputfile + label svg
+    width: 41px
+    height: 41px
+
+.inputfile-box label
+    display: flex
+    svg, span
+        margin-top: auto
+        margin-bottom: auto
+
+    svg
+        margin-right: 10px
+
+
+
+.promo-intro
+    padding-top: 150px
+    padding-bottom: 25px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    border-radius: 4px
+    overflow: hidden
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        display: block
+        background: linear-gradient(270deg, rgba(249,249,249,1) 0%, rgba(249,249,249,0) 100%)
+    .container
+        position: relative
+        z-index: 2
+    .heading
+        margin-bottom: 0.5em
+        a
+            color: #000
+    &__sub
+        font-size: 16px
+        margin-bottom: 0.5em
+        color: $accent
+    &__text
+        font-size: 16px
+        color: #666666
+    .link
+        display: inline-block
+        margin-top: 1.5em
+
+
+.block-direction
+    border-radius: 4px
+    overflow: hidden
+    padding-bottom: 20px
+    border: 1px solid #eaeaea
+    margin-bottom: 30px
+    transition: .3s ease
+    height: 100%
+    &:hover
+        box-shadow: 0px 7px 49px 0px rgba(0, 0, 0, 0.11)
+    &__img
+        position: relative
+        img
+            width: 100%
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: linear-gradient(0, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 22%, rgba(255,255,255,0) 100%)
+
+        &_no-gradient
+            &:after
+                display: none
+    .heading
+        margin-left: 20px
+        margin-right: 20px
+        margin-top: -5em
+        margin-bottom: 1em
+        &__sm
+
+    &__content
+        padding-left: 20px
+        padding-right: 20px
+        &_grey
+            color: #656565
+            line-height: 2
+            p
+                line-height: 2
+    &_v-2
+        padding-bottom: 0
+        .heading
+            position: relative
+            margin-top: -2em
+    &_bg-white
+        background-color: #fff
+        border: 0
+        .block-direction__content
+            background-color: #fff
+    &_border
+        border: 1px solid #eaeaea
+        .heading
+            margin-top: -3em
+            min-height: 2.666666em
+    &_h-auto
+        height: auto
+        .block-direction__content
+            padding-top: 0
+            padding-bottom: 30px !important
+.quote
+    padding-top: 2em
+    padding-bottom: 2em
+    position: relative
+    &:before
+        content: ''
+        display: block
+        background-image: url(../img/q.png)
+        width: 15px
+        height: 14px
+        position: absolute
+        top: 0
+        left: 50%
+        margin-left: -7.5px
+        top: 0
+    &:after
+        content: ''
+        display: block
+        background-image: url(../img/q.png)
+        width: 15px
+        height: 14px
+        position: absolute
+        left: 50%
+        margin-left: -7.5px
+        bottom: 0
+
+
+.team-slider
+    .slick-dots
+        margin-top: 75px
+    .slick-list
+        padding-top: 75px
+    .slick-slide
+    .slick-arrow
+        &.slick-prev
+            left: -45px
+        &.slick-next
+            right: -45px
+    &__item
+        padding-left: 10px
+        padding-right: 10px
+        &-inner
+            margin-top: -150px
+            padding-bottom: 20px
+        &-img   
+            text-align: center
+            position: relative
+            top: 150px
+            img
+                margin: 0
+                display: inline-block
+                border-radius: 50%
+                max-width: 90%
+        &-content
+            padding-top: 190px
+            background-color: #fff
+            text-align: center
+            padding-left: 30px
+            padding-right: 30px
+            padding-bottom: 50px
+            box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.11)
+
+        &-heading
+            font-size: 24px
+            position: relative
+            margin-bottom: 10px
+            &:before
+                content: ''
+                display: block
+                width: 150px
+                height: 1px
+                position: absolute
+                left: 50%
+                top: -15px
+                margin-left: -75px
+                background-color: #219cdc
+        &-pos
+            font-size: 18px
+            line-height: 1.38
+            color: #848484
+
+        &-quote
+            margin-top: 25px
+            font-size: 16px
+            color: #2a2a2a
+            line-height: 1.25
+            padding-top: 50px
+            padding-bottom: 55px
+            position: relative
+            &:before
+                content: ''
+                display: block
+                width: 33px
+                height: 27px
+                top: 0
+                position: absolute
+                left: 50%
+                margin-left: -16.5px
+                background-image: url(../img/q1.png)
+                background-position: 0 0
+                background-repeat: no-repeat
+            &:after
+                content: ''
+                display: block
+                width: 34px
+                height: 27px
+                bottom: 0
+                position: absolute
+                left: 50%
+                margin-left: -17px
+                background-image: url(../img/q2.png)
+                background-position: 0 0
+                background-repeat: no-repeat
+
+
+
+.bg-overlay
+    position: relative
+    &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 33%, rgba(204,192,0,0) 100%)
+    .container
+        z-index: 10
+
+
+.gallery-block
+    background-color: #fff
+    border-radius: 4px
+    overflow: hidden
+    height: 100%
+    &__text
+        padding-left: 30px
+        padding-right: 30px
+        padding-top: 25px
+        padding-bottom: 25px
+        &-num
+            font-size: 30px
+            color: #cbe4ef
+
+        &-title
+            margin-top: 0.25em
+            font-size: 20px
+            color: #2a2a2a
+
+.gallery-slider
+    &__item
+        img
+            width: 100%
+            height: auto
+    .slick-dots
+        padding: 0
+        margin: 0
+        display: flex
+        position: absolute
+        bottom: 20px
+        width: 100%
+        justify-content: center
+        li
+            list-style-type: none
+            padding: 0
+            margin: 0
+            width: 24px
+            height: 24px
+            margin-left: 12px
+            margin-right: 12px
+            button
+                text-indent: -9999px
+                width: 24px
+                height: 24px
+                border: 0
+                border-radius: 50%
+                background-color: #3679a9
+                border: 1px solid #3679a9
+            &.slick-active
+                button
+                    border-color: #fff
+                    background-color: #86c242
+
+    .slick-arrow
+        width: 9px + 16px
+        height: 15px + 16px
+        position: absolute
+        top: 50%
+        margin-top: -15px
+        border: 0
+        background: transparent
+        padding: 8px
+        cursor: pointer
+        right: 26px
+        z-index: 10
+        svg
+            position: absolute
+            top: 8px
+            left: 8px
+            width: 9px
+            height: 15px
+            transition: .3s ease
+            path
+                transition: .3s ease
+                fill: #fff
+        &:hover
+            svg
+                transition: .3s ease
+                path
+                    transition: .3s ease
+                    fill: #86c242
+        &.slick-prev
+            right: auto
+            left: 26px
+            svg
+                transform: rotate(180deg)
+
+
+.table-responsive
+    overflow-x: auto
+    position: relative
+    margin: 2em 0
+    -webkit-overflow-scrolling: touch
+    -ms-overflow-style: -ms-autohiding-scrollbar
+
+    .table
+        width: 100%
+        border-left: 1px solid #f0f7fa
+        border-top: 1px solid #f0f7fa
+        overflow: hidden
+        th
+            background-color: #f0f7fa
+            color: #026698
+            border-right: 1px solid #f0f7fa
+            border-bottom: 1px solid #f0f7fa
+            font-size: 14px
+            text-align: left
+        td
+            border-right: 1px solid #f0f7fa
+            border-bottom: 1px solid #f0f7fa
+            background-color: #fff
+            color: #656565
+        td, th
+            padding-left: 20px
+            padding-right: 20px
+            padding-top: 14px
+            padding-bottom: 14px
+            font-size: 16px
+
+
+.pansion-card
+    border-radius: 4px
+    overflow: hidden
+    background-color: #fff
+    padding-bottom: 25px
+    margin-bottom: 20px
+    display: block
+    text-decoration: none !important
+    transition: .3s ease
+    &:hover
+        box-shadow: 0px 5px 10px 0px rgba(171, 171, 171, 0.15)
+    &__img
+        img
+            width: 100%
+            height: auto
+
+    &__title
+        margin-top: 20px
+        color: #656565 !important
+        font-size: 24px
+        padding-left: 30px
+        padding-right: 30px
+
+
+.capture-bar
+    background-color: #219cdc
+    border-radius: 4px
+    font-size: 24px
+    color: #fff
+    text-align: center
+    padding: 30px
+
+.discont-block
+    border-radius: 4px
+    border: 1px solid #e3f0f6
+    border-radius: 4px
+    padding: 20px
+    margin-bottom: 30px
+    background-color: #fafafa
+    span
+        font-size: 24px
+        color: #2a2a2a
+
+    div
+        font-size: 32px
+        color: #219cdc
+
+    &_2
+        border-color: #b8ddf0
+        background-color: #fbfbfb
+    &_3
+        border-color: #77c1e8
+        background-color: #fdfdfd
+    &_4
+        border-color: #219cdc
+        background-color: #ffffff
+
+
+.quote-2
+    padding-top: 60px
+    background: url(../img/q-2.png) top center no-repeat
+    font-size: 24px
+    color: #2a2a2a
+    text-align: center
+    font-style: italic
+    position: relative
+    padding-bottom: 60px
+    &:after
+        content: ''
+        display: block
+        width: 168px
+        height: 1px
+        position: absolute
+        background-color: #219cdc
+        left: 50%
+        bottom: 0
+        margin-left: -84px
+
+.pt
+    padding-top: 60px
+
+.pb
+    padding-bottom: 60px
+
+.pt-lg
+    padding-top: 100px
+
+.pb-lg
+    padding-bottom: 100px
+
+
+.icons-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    &__item
+        display: flex
+        padding-bottom: 40px
+        padding-top: 40px
+        width: calc(50% - 30px)
+        border-top: 1px solid #ebebeb
+        &_px-sm
+            padding-top: 20px
+            padding-bottom: 20px
+        &_bd-0
+            border: 0 !important
+        &:nth-child(1), &:nth-child(2)
+            border-top: 0
+        &-icon
+            margin-right: 20px
+            .icon
+                width: 77px
+                height: 77px
+        &-heading
+            font-size: 18px
+            color: #000
+            margin-bottom: 0.5em
+        &-content
+            font-size: 14px
+            line-height: 1.7
+            color: #2a2a2a
+            margin: auto 0
+            .num
+                font-size: 26px
+                line-height: 1
+                color: #cbe4ef
+                margin-bottom: 0.5em
+            &_sm
+                font-size: 16px
+                .num
+                    margin-bottom: 0
+            &_md
+                font-size: 18px
+                .num
+                    margin-bottom: 0
+            &_lg
+                font-size: 22px
+                line-height: 1.27
+                .num
+                    margin-bottom: 0
+
+            &_lh-1-333
+                line-height: 1.333
+
+    &_three-cols
+        justify-content: flex-start
+        .icons-list
+            &__item
+                padding-top: 20px
+                padding-bottom: 20px
+                border: 0
+                width: 33.3333%
+                padding-left: 10px
+                padding-right: 10px
+
+
+.abon-card
+    padding: 20px
+    margin-top: 30px
+    padding-bottom: 30px
+    background-color: #ffffff
+    box-shadow: 0px 10px 5px 0px rgba(171, 171, 171, 0.15)
+    &__name
+        font-size: 24px
+        color: #656565
+        font-weight: 500
+        margin-bottom: 0.5em
+    span
+        font-size: 18px
+        color: #056697
+        display: block  
+    &__digit
+        font-size: 18px
+        color: #656565
+        display: block
+        margin-top: 5px
+        span
+            color: #056697
+            font-size: 60px
+
+.section_capture
+	.form-wrapper
+		border-radius: 6px
+		padding: 30px
+		border: 1px solid #cbe4ef
+
+
+
+
+
+.section_capture .form-wrapper .form
+    &__input
+        width: 100%
+        height: 48px
+        padding-left: 20px
+        padding-right: 20px
+        border: 1px solid #cbe4ef
+        border-radius: 4px
+        color: #000
+        font-size: 14px
+        outline: none
+        margin-bottom: 20px
+        transition: .3s ease
+        &_lg
+            height: 60px
+        &:focus
+            border-color: #00669c
+                
+
+.icon-text
+    margin-bottom: 32px
+    display: flex
+    &__icon
+        width: 120px
+        height: 120px
+        svg
+            width: 120px
+            height: 120px
+        img
+            width: 120px
+            height: 120px
+            min-width: 120px
+            min-height: 120px
+    &__content 
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 140%
+        color: #666B71
+        padding-left: 44px
+        span
+            display: block
+            font-style: normal
+            font-weight: 500
+            margin-bottom: 16px
+
+
+.faq
+    border: 1px solid #D7F0FF
+    border-radius: 6px
+    padding-left: 20px
+    padding-right: 20px
+    margin-bottom: 16px
+    background-color: #fff
+    &__q
+        font-style: normal
+        font-weight: 400
+        font-size: 24px
+        line-height: 1.05
+        color: #303844
+        padding-top: 25px
+        padding-bottom: 22px
+        cursor: pointer
+        position: relative
+        padding-right: 40px
+        user-select: none
+        &:after
+            content: ''
+            display: block
+            width: 20px
+            height: 20px
+            position: absolute
+            right: 0
+            top: 25px
+            background-repeat: no-repeat
+            background-position: 0 0
+            background-image: url(../img/plus.svg)
+    &__a
+        font-style: normal
+        font-weight: 400
+        font-size: 20px
+        line-height: 140%
+        color: #666B71
+        padding-bottom: 30px
+        display: none
+
+.faq.active
+    .faq__q
+        &:after
+            transform: rotate(45deg)
+    .faq__a
+        display: block
+
+
+
+.callback-block
+    padding: 60px   
+    border-radius: 6px
+    border: 2px solid #A4DDFF
+    background-image: url(../img/bg-callback.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    margin-left: -60px
+    margin-right: -60px
+
+.point
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 140%
+    color: #666B71
+    padding-left: 15px
+    position: relative
+    &:before
+        position: absolute
+        left: 0
+        top: 50%
+        margin-top: -5px
+        content: ''
+        display: block
+        width: 10px
+        height: 10px
+        border-radius: 50%
+
+    &_blue
+        &:before
+            background-color: #4CAAE8
+    &_purpe
+        &:before
+            background-color: #6C61B0
+    &_grey
+        &:before
+            background-color: #769ECE
+
+    &_purpe-2
+        &:before
+            background-color: #8A5C9B
+
+    
